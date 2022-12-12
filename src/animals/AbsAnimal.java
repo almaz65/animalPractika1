@@ -1,10 +1,10 @@
 package animals;
 
 public abstract class AbsAnimal {
-    private String name;
-    private int age;
-    private int weight;
-    private String color;
+    public String name;
+    public int age;
+    public int weight;
+    public String color;
 
     public String getName() {
         return this.name;
@@ -68,11 +68,13 @@ public abstract class AbsAnimal {
              return "год";
          }
 
-         if (age % 10 >=2 && age % 10 <= 4) {
-             return "года";
-         }
+//         if (age % 10 >=2 && age % 10 <= 4) {
+//             return "года";
+//         }
+//
 //         Последнее условие можно не писать, т.к. в данный диапазон программа попадет по умолчанию
 //        т.е. return "года";
+        return "года";
 
     }
 }
